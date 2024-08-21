@@ -53,3 +53,20 @@ form input.equal{
 form input.operator{
     color: #33ffd8;
 }
+
+.icon-shape{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    background-color: #3a4452;
+    padding: 20px;
+
+}
+.icon-shape div{
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    box-shadow:-8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+}
