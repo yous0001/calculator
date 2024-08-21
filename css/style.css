@@ -35,6 +35,7 @@ form .display{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
+    
 
 }
 form .display input{
@@ -42,9 +43,13 @@ form .display input{
     flex: 1;
     font-size: 45px;
     box-shadow:none ;
+    border-radius: 20px;
 
 }
 form input.equal{
     width: 145px;
     border-radius: 10px !important;
+}
+form input.operator{
+    color: #33ffd8;
 }
