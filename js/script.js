@@ -1,4 +1,5 @@
 const display=document.getElementsByName("display")[0]
+const buttons=document.getElementsByClassName("button")
 document.addEventListener('keydown',(e)=>{
     switch (e.key) {
         case '0':
@@ -65,4 +66,35 @@ document.addEventListener('keydown',(e)=>{
         default:
             return;
     }
+})
+
+document.getElementsByClassName("square")[0].addEventListener('click',()=>{
+    Array.from(buttons).forEach((btn)=>{
+        btn.style.width="60px";
+        btn.style.borderRadius="0px"
+    })
+})
+document.getElementsByClassName("rounded")[0].addEventListener('click',()=>{
+    Array.from(buttons).forEach((btn)=>{
+        btn.style.width="60px";
+        btn.style.borderRadius="0.375rem"
+    })
+})
+document.getElementsByClassName("rounded-circle")[0].addEventListener('click',()=>{
+    Array.from(buttons).forEach((btn)=>{
+        btn.style.width="60px";
+        btn.style.borderRadius="50%"
+    })
+})
+document.getElementsByClassName("rounded-pill")[0].addEventListener('click',()=>{
+    Array.from(buttons).forEach((btn)=>{
+        btn.style.width="90px ";
+        btn.style.borderRadius="60rem"
+    })
+})
+document.getElementsByClassName("rounded-two")[0].addEventListener('click',()=>{
+    Array.from(buttons).forEach((btn)=>{
+        btn.style.width="60px";
+        btn.style.borderRadius="0 0.375rem"
+    })
 })
