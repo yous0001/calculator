@@ -89,9 +89,8 @@ form input.operator{
 .color-selecter{
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
     align-items: center;
-    transform: translateX(94px);
+    transform: translate(94px,-50%) ;
     transition: all 0.7s;
     
 }

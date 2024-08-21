@@ -1,5 +1,7 @@
 const display=document.getElementsByName("display")[0]
 const buttons=document.getElementsByClassName("button")
+const calculator=document.getElementById("calculator")
+const container=document.getElementById("container")
 let selector=false
 
 document.addEventListener('keydown',(e)=>{
@@ -104,12 +106,38 @@ document.getElementsByClassName("rounded-two")[0].addEventListener('click',()=>{
 
 function openCloseSelector(){     
     if(!selector){
-        document.getElementsByClassName("color-selecter")[0].style.transform ="translateX(0px)"
+        document.getElementsByClassName("color-selecter")[0].style.transform ="translate(0px,-50%)"
         document.getElementById("gear").style.animation="rotate reverse 2s 1"
         selector=true
     }else{
-        document.getElementsByClassName("color-selecter")[0].style.transform ="translateX(94px)"
+        document.getElementsByClassName("color-selecter")[0].style.transform ="translate(94px,-50%)"
         document.getElementById("gear").style.animation="rotate normal 2s 1"
         selector=false
     }
 }
+
+document.getElementsByClassName("one")[0].addEventListener('click',()=>{
+    document.getElementById("calculator").style.backgroundColor="#5D0E41"
+    document.getElementsByClassName("icon-shape")[0].style.backgroundColor="#5D0E41"
+    document.getElementById("container").style.backgroundColor="#FF204E"
+})
+document.getElementsByClassName("two")[0].addEventListener('click',()=>{
+    document.getElementById("calculator").style.backgroundColor="#508D4E"
+    document.getElementsByClassName("icon-shape")[0].style.backgroundColor="#508D4E"
+    document.getElementById("container").style.backgroundColor="#F6E96B"
+})
+document.getElementsByClassName("three")[0].addEventListener('click',()=>{
+    document.getElementById("calculator").style.backgroundColor="#3a4452"
+    document.getElementsByClassName("icon-shape")[0].style.backgroundColor="#3a4452"
+    document.getElementById("container").style.backgroundColor="#e3f9ff"
+})
+document.getElementsByClassName("four")[0].addEventListener('click',()=>{
+    document.getElementById("calculator").style.backgroundColor="#36C2CE"
+    document.getElementsByClassName("icon-shape")[0].style.backgroundColor="#36C2CE"
+    document.getElementById("container").style.backgroundColor="#77E4C8"
+})
+document.getElementsByClassName("five")[0].addEventListener('click',()=>{
+    document.getElementById("calculator").style.backgroundColor="#850F8D"
+    document.getElementsByClassName("icon-shape")[0].style.backgroundColor="#850F8D"
+    document.getElementById("container").style.backgroundColor="#C738BD"
+})
