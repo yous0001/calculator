@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="our-container">
         <div class="calculator">
@@ -16,7 +19,8 @@
                 </div>
                 <div>
                     <input type="button" value="AC" onclick="display.value=''" class="operator button">
-                    <input type="button" value="DE" onclick="display.value=display.value.toString().slice(0,-1)" class="operator button">
+                    <input type="button" value="DE" onclick="display.value=display.value.toString().slice(0,-1)"
+                        class="operator button">
                     <input type="button" value="." onclick="display.value+='.'" class="operator button">
                     <input type="button" value="/" onclick="display.value+='/'" class="operator button">
                 </div>
@@ -40,8 +44,9 @@
                 </div>
                 <div>
                     <input type="button" value="00" onclick="display.value+='00'" class="button">
-                    <input type="button" value="0"  onclick="display.value+='0'" class="button">
-                    <input type="button" value="=" onclick=" display.value = eval(display.value)" class="equal operator">
+                    <input type="button" value="0" onclick="display.value+='0'" class="button">
+                    <input type="button" value="=" onclick=" display.value = eval(display.value)"
+                        class="equal operator">
                 </div>
             </form>
         </div>
@@ -52,10 +57,26 @@
             <div class="rounded-pill"></div>
             <div class="rounded-two"></div>
         </div>
+        <div class="color-selecter d-flex position-fixed">
+            <div class="gear-icon">
+                <i class="fa-solid fa-gear" id="gear" onclick="openCloseSelector()"></i>
+            </div>
+            <div class="select">
+                <div class="container">
+                    <div class="colors">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                        <div class="four"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

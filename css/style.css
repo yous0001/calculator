@@ -72,10 +72,65 @@ form input.operator{
     height: 30px;
     box-shadow:-8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
     background-color: #33ffd8;
+    cursor: pointer;
 }
 .rounded-pill{
     width: 45px !important;
 }
 .rounded-two{
     border-radius: 0 0.375rem;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}
+
+
+.color-selecter{
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    align-items: center;
+    transform: translateX(94px);
+    transition: all 0.7s;
+    
+}
+.select{
+    background-color: white;
+    padding: 20px;
+}
+.color-selecter .gear-icon{
+    font-size: 2rem;
+    padding: 10px;
+    background-color: white;
+}
+
+
+.colors div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-block: 20px;
+    
+}
+
+.one{
+    background-color: #5D0E41;
+    /*#FF204E*/
+}
+.two{
+    background-color: #508D4E;
+    /*#F6E96B*/
+}
+.three{
+    background-color: #3a4452;
+    /*#e3f9ff*/
+}
+.four{
+    background-color:#36C2CE ;
+    /*#77E4C8*/
+}
+.five{
+    background-color:#850F8D ;
+    /*#C738BD*/
 }

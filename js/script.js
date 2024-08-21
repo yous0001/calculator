@@ -1,5 +1,7 @@
 const display=document.getElementsByName("display")[0]
 const buttons=document.getElementsByClassName("button")
+let selector=false
+
 document.addEventListener('keydown',(e)=>{
     switch (e.key) {
         case '0':
@@ -98,3 +100,16 @@ document.getElementsByClassName("rounded-two")[0].addEventListener('click',()=>{
         btn.style.borderRadius="0 0.375rem"
     })
 })
+
+
+function openCloseSelector(){     
+    if(!selector){
+        document.getElementsByClassName("color-selecter")[0].style.transform ="translateX(0px)"
+        document.getElementById("gear").style.animation="rotate reverse 2s 1"
+        selector=true
+    }else{
+        document.getElementsByClassName("color-selecter")[0].style.transform ="translateX(94px)"
+        document.getElementById("gear").style.animation="rotate normal 2s 1"
+        selector=false
+    }
+}
